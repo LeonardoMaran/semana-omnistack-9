@@ -13,6 +13,7 @@ app.use(routes);
 //precisa aparecer depois do express.json sena ele nao funciona
 //00.32.26
 
-mongoose.connect('mongodb://localhost:27017/semstack9',{ useUnifiedTopology: true,useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/semstack9',
+{ useUnifiedTopology: true, useNewUrlParser: true })
 
 app.listen(3333);
